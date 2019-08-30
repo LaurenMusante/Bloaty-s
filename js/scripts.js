@@ -1,50 +1,33 @@
 $(document).ready(function(){
 
 // BACK END
-function Create (price){
-  this.pizzaAmount = [];
-  this.totalItems = this.assignId;  // needed?
-  this.currentId = 0;
-} //object curly ender
-
-Create.prototype.assignId = function(){
-  this.currentId += 1;
-  return this.currentId;
-}
-
-Create.prototype.addPizza = function(pizza){
-  pizza.id = this.assignId();
-  this.pizzaAmount.push(pizza);
-}
 
 function Pizza (size, toppings){
-  this.size = size;
-  this.toppings = toppings;
-  this.pizzaPrice =;
+  size = size;
+  toppings = [];
+  price = 0;
 }
-//
-// var individualPizzaPrice =
 
-Pizza.prototype.smallCalcPrice = function(){
-var smallVal = $("input:checkbox[name=small]:checked").val();
-  smallVal + this.toppings.length +0.5;
+// var sizePrice = sizecheckbox:checked .val
+Pizza.prototype.calcPrice = function(){
+  this.size.val() + this.toppings.length * .50
 }
-Pizza.prototype.medCalcPrice = function(){
-var medVal = $("input:checkbox[name=med]:checked").val();
-  medVal + this.toppings.length +0.75;
-}
-Pizza.prototype.largeCalcPrice = function(){
-var largeVal = $("input:checkbox[name=large]:checked").val();
-  largeVal+ this.toppings.length +1;
-}
-Pizza.prototype.smallCalcPrice = function(){
-var xlargeVal = $("input:checkbox[name=xlarge]:checked").val();
-  xlargeVal + this.toppings.length +1.25;
-}
+
 
 
 //UI
-
+$(document).ready(function(){
+  $("form#pizzaForm").submit(function(event){
+    event.preventDefault();
+  var toppingsArray = []
+  $("input:checkbox[name=toppings]:checked").each(function(){
+    var showToppings = $(this).val();
+    toppingsArray.push(showToppings);
+    $("#showPizza").show();
+  });
+  $("#pizzaForm").hide();
+});
+});
 
 
 
