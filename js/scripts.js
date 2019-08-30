@@ -19,7 +19,7 @@ Pizza.prototype.calcPrice = function(){
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
-  var toppingsArray = []
+  var toppingsArray = [];
   $("input:checkbox[name=toppings]:checked").each(function(){
     var showToppings = $(this).val();
     toppingsArray.push(showToppings);
