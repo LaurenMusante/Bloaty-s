@@ -8,18 +8,13 @@
 
 _A website where the user can select the type of pizza they'd like to order. Price is calculated depending on the size and number of toppings selected._
 
-Pricing with 2 toppings is as follows:
+Pricing with 1 topping is as follows:
 * _Small - $7.00_
 * _Medium - $10.00_
 * _Large - $13.00_
 * _X-Large - $15.00_
 
-Each additional topping will add $1.00 to total price.
-
-Deluxe toppings:
-* _Gold Leaf - $5.00_
-* _Avocado - $2.00_
-* _Shrimp - $4.00_
+Each additional topping will add $0.50 - $1.25 to total price, depending on selected size.
 
 
 ## Setup/Installation Requirements
