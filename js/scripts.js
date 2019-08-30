@@ -1,22 +1,10 @@
-// // BACK END
+//Back end
+var pizza; //declaring object called pizza
 
-function Pizza (size, toppings){
-  size = size;
-  toppings = [];
-  price = 0;
-}
+var pizza;
+pizza.toppings = [];
 
-var laurenPizza = new Pizza ("small", "[mushroom, olive]", "$8"}
-
-//
-// Pizza.prototype.calcPrice = function(){
-//   this.size.val() + (this.toppings.length * .50)
-//   return: this.price;
-// }
-//
-
-
-//UI
+// //UI
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
@@ -24,9 +12,10 @@ $(document).ready(function(){
     // $(".showPrice").show();
     $("input:checkbox[name=toppings]:checked").each(function(){
       var toppings = $(this).val();
+      pizza.toppings.push(toppings);
       $('#showPizza').append(toppings + "<br>");
       $('#pizzaForm').hide();
+
     });
   });
 });
-}); //doc ready curly
