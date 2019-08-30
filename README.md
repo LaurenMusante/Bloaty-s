@@ -1,4 +1,4 @@
-# _Pizza Pizza!_
+# _Bloaty's Pizza Hog_
 
 #### _A website where you can customize and order your own pizza, August 30, 2019_
 
@@ -8,26 +8,20 @@
 
 _A website where the user can select the type of pizza they'd like to order. Price is calculated depending on the size and number of toppings selected._
 
-Pricing with 1 topping is as follows:
+Pricing for base pizza is as follows:
 * _Small - $7.00_
 * _Medium - $10.00_
 * _Large - $13.00_
 * _X-Large - $15.00_
 
-Each additional topping will add $0.50 - $1.25 to total price, depending on selected size.
+Each additional topping will add $0.50 to total price.
 
-Total pizza price = size price + number of toppings * $0.50
+Total pizza price = size price + (number of toppings * $0.50)
 
 
 ## Setup/Installation Requirements
+* _Clone [this repository](https://github.com/LaurenMusante/Bloaty-s.git) to your desktop. Use Terminal to open the project in Atom. Open index.html in Atom. Use the cursor to drag index.html into a functional web browser._
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
