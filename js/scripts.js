@@ -1,6 +1,4 @@
-$(document).ready(function(){
-
-// BACK END
+// // BACK END
 
 function Pizza (size, toppings){
   size = size;
@@ -8,33 +6,27 @@ function Pizza (size, toppings){
   price = 0;
 }
 
-// var sizePrice = sizecheckbox:checked .val
-Pizza.prototype.calcPrice = function(){
-  this.size.val() + this.toppings.length * .50
-}
+var laurenPizza = new Pizza ("small", "[mushroom, olive]", "$8"}
 
+//
+// Pizza.prototype.calcPrice = function(){
+//   this.size.val() + (this.toppings.length * .50)
+//   return: this.price;
+// }
+//
 
 
 //UI
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
-var toppingsIds = $(".toppingsChoices input:checkbox:checked")
-return $(this).val();
-console.log(toppingsIds);
-}).toArray();
-
+    $("#showPizza").show();
+    // $(".showPrice").show();
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      var toppings = $(this).val();
+      $('#showPizza').append(toppings + "<br>");
+      $('#pizzaForm').hide();
     });
-
-//   $("input:checkbox[name=toppings]:checked").each(function(){
-//     var showToppings = $(this).val();
-//     toppingsArray.push(showToppings);
-//     $("#showPizza").show();
-//   });
-//   $("#pizzaForm").hide();
-// });
-// });
-
-
-
+  });
+});
 }); //doc ready curly
