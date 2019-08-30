@@ -19,15 +19,21 @@ Pizza.prototype.calcPrice = function(){
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
-  var toppingsArray = [];
-  $("input:checkbox[name=toppings]:checked").each(function(){
-    var showToppings = $(this).val();
-    toppingsArray.push(showToppings);
-    $("#showPizza").show();
-  });
-  $("#pizzaForm").hide();
-});
-});
+var toppingsIds = $(".toppingsChoices input:checkbox:checked")
+return $(this).val();
+console.log(toppingsIds);
+}).toArray();
+
+    });
+
+//   $("input:checkbox[name=toppings]:checked").each(function(){
+//     var showToppings = $(this).val();
+//     toppingsArray.push(showToppings);
+//     $("#showPizza").show();
+//   });
+//   $("#pizzaForm").hide();
+// });
+// });
 
 
 
