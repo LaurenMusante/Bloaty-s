@@ -1,3 +1,22 @@
 #showPizza {
   display: none;
 }
+
+#showPrice {
+  display: none;
+}
+h1, p {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+body {
+  color: #ffff99;
+}
+.grad {
+  background-image: linear-gradient(#F9D276, #AD1D45,  #83142C, #44000D);
+}

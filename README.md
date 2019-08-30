@@ -16,6 +16,8 @@ Pricing with 1 topping is as follows:
 
 Each additional topping will add $0.50 - $1.25 to total price, depending on selected size.
 
+Total pizza price = size price + number of toppings * $0.50
+
 
 ## Setup/Installation Requirements
 

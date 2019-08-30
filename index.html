@@ -8,12 +8,14 @@
     <title>Bloaty's</title>
   </head>
   <body>
-    <h1>Welcome to Bloaty's Pizza Hog!</h1>
-    <p><em>Where customization is king and all pizzas are made to order.</em></p>
-    <h3>Please select your desired size and toppings below:</h3>
-<form id="pizzaForm">
+    <div class ="grad">
+      <div class="container">
+        <h1>Welcome to Bloaty's Pizza Hog!</h1>
+        <p><em>Where customization is king and all pizzas are made to order.</em></p>
+        <h3>Our pizzas are served on a thick crust with zesty marinara sauce and mozzarella cheese. Please select your desired size and any additional toppings below:</h3>
+        <form id="pizzaForm">
 
-    <h2>Size (includes one topping):</h2>
+    <h2>Size:</h2>
     <div>
       <input type="checkbox" id="small" name="small">
       <label for="small" value="7.00">Small - $7.00</label>
@@ -64,15 +66,17 @@
         <label for="toppings" value="0.50">Arugula</label>
       </div>
       <br>
-      <button type="submit" name="button" id="showPrice">Show Price</button>
+      <button type="submit" name="button" class="btn btn-success" id="getPrice">Show Price</button>
   </div>
-
+</div>
   </form>
 
   <span id="showPizza">
     <h3>Your Pizza:</h3>
   </span>
-  <span id="yourPrice"</span>
+  <span id="showPrice">
     <h1>Your price:</h1>
+  </span>
+  </div>
   </body>
 </html>
