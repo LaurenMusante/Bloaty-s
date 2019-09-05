@@ -8,7 +8,6 @@
     <title>Bloaty's</title>
   </head>
   <body>
-    <div class ="grad">
       <div class="container">
         <h1>Welcome to Bloaty's Pizza Hog!</h1>
         <p><em>Where customization is king and all pizzas are made to order.</em></p>
@@ -17,19 +16,19 @@
         <h2> Select Size</h2>
 <div class="size">
           <div class="form-check">
-               <input class="form-check-input" type="radio" name="small" value="small">
+               <input class="form-check-input" type="radio" name="size" value="small">
                <label class="form-check-label" for="size">Small</label>
            </div>
            <div class="form-check">
-             <input class="form-check-input" type="radio" name="medium" value="medium">
+             <input class="form-check-input" type="radio" name="size" value="medium">
              <label class="form-check-label" for="size">Medium</label>
            </div>
            <div class="form-check">
-             <input class="form-check-input" type="radio" name="large" value="large">
+             <input class="form-check-input" type="radio" name="size" value="large">
              <label class="form-check-label" for="size">Large</label>
            </div>
            <div class="form-check">
-             <input class="form-check-input" type="radio" name="xlarge" value="xlarge">
+             <input class="form-check-input" type="radio" name="size" value="xlarge">
              <label class="form-check-label" for="size">Extra Large</label>
            </div>
   </div>
@@ -69,13 +68,9 @@
         </form>
 
 
-  <span id="showPizza">
-    <h3>Your Pizza:</h3>
-  </span>
-
-  <span id="showPrice">
-    <h1>Your price:</h1>
-  </span>
+<div class="result">
+  <h3>Your Price: <span id="showPrice"> </span></h3>
+</div>
   </div>
   </body>
 </html>

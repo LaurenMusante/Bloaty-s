@@ -1,9 +1,10 @@
-#showPizza {
+
+.result {
   display: none;
 }
 
-#showPrice {
-  display: none;
+body {
+  background-color: grey;
 }
 h1, p {
   text-align: center;
@@ -20,10 +21,6 @@ p {
 
 body {
   color: #F9D276;
-}
-
-.grad {
-  background-image: linear-gradient(#F9D276, #AD1D45,  #83142C, #44000D);
 }
 
 .panel {
