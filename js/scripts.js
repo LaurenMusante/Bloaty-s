@@ -46,6 +46,6 @@ $(document).ready(function(){
       this.toppingsArray.push(toppings); //console showing "push" as undefined. Also tried "append" with same result.
     });
   $(".result").show();
+  $("#showPrice").text(newPizza.totalCost);
   });
 });
-    // new Pizza

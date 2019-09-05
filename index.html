@@ -8,69 +8,69 @@
     <title>Bloaty's</title>
   </head>
   <body>
-      <div class="container">
-        <h1>Welcome to Bloaty's Pizza Hog!</h1>
-        <p><em>Where customization is king and all pizzas are made to order.</em></p>
+    <div class="container">
+      <h1>Welcome to Bloaty's Pizza Hog!</h1>
+      <p><em>Where customization is king and all pizzas are made to order.</em></p>
         <h3>Our pizzas are served on a thick crust with zesty marinara sauce and mozzarella cheese. Please select your desired size and any additional toppings below:</h3>
-        <form id="pizzaForm">
+      <form id="pizzaForm">
         <h2> Select Size</h2>
-<div class="size">
-          <div class="form-check">
-               <input class="form-check-input" type="radio" name="size" value="small">
-               <label class="form-check-label" for="size">Small</label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="radio" name="size" value="medium">
-             <label class="form-check-label" for="size">Medium</label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="radio" name="size" value="large">
-             <label class="form-check-label" for="size">Large</label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="radio" name="size" value="xlarge">
-             <label class="form-check-label" for="size">Extra Large</label>
-           </div>
-  </div>
-<div class="toppingChoices">
-        <h2>Extra Toppings:</h2>
-          <div>
-            <input type="checkbox" id="xcheese" name="toppings" value="xcheese">
-            <label for="toppings" value="0.50">Extra Cheese</label>
+          <div class="size">
+            <div class="form-check">
+                 <input class="form-check-input" type="radio" name="size" value="small">
+                 <label class="form-check-label" for="size">Small</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="size" value="medium">
+               <label class="form-check-label" for="size">Medium</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="size" value="large">
+               <label class="form-check-label" for="size">Large</label>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="radio" name="size" value="xlarge">
+               <label class="form-check-label" for="size">Extra Large</label>
+             </div>
           </div>
-          <div>
-            <input type="checkbox" id="mushroom" name="toppings" value="mushrooms">
-            <label for="toppings" value="mushroom">Mushrooms</label>
+          <div class="toppingChoices">
+            <h2>Extra Toppings:</h2>
+              <div>
+                <input type="checkbox" id="xcheese" name="toppings" value="xcheese">
+                <label for="toppings" value="0.50">Extra Cheese</label>
+              </div>
+              <div>
+                <input type="checkbox" id="mushroom" name="toppings" value="mushrooms">
+                <label for="toppings" value="mushroom">Mushrooms</label>
+              </div>
+              <div>
+                <input type="checkbox" id="olive" name="toppings" value="olives">
+                <label for="toppings" value="olive">Olives</label>
+              </div>
+              <div>
+                <input type="checkbox" id="spinach" name="toppings" value="spinach">
+                <label for="toppings" value="spinach">Spinach</label>
+              </div>
+              <div>
+                <input type="checkbox" id="tomato" name="toppings" value="tomato">
+                <label for="toppings" value="tomato">Fresh Tomato</label>
+              </div>
+              <div>
+                <input type="checkbox" id="onion" name="toppings" value="onion">
+                <label for="toppings" value="onion">Red Onion</label>
+              </div>
+              <div>
+                <input type="checkbox" id="basil" name="toppings" value="basil">
+                <label for="toppings" value="basil">Basil</label>
+              </div>
+              <br>
           </div>
-          <div>
-            <input type="checkbox" id="olive" name="toppings" value="olives">
-            <label for="toppings" value="olive">Olives</label>
-          </div>
-          <div>
-            <input type="checkbox" id="spinach" name="toppings" value="spinach">
-            <label for="toppings" value="spinach">Spinach</label>
-          </div>
-          <div>
-            <input type="checkbox" id="tomato" name="toppings" value="tomato">
-            <label for="toppings" value="tomato">Fresh Tomato</label>
-          </div>
-          <div>
-            <input type="checkbox" id="onion" name="toppings" value="onion">
-            <label for="toppings" value="onion">Red Onion</label>
-          </div>
-          <div>
-            <input type="checkbox" id="basil" name="toppings" value="basil">
-            <label for="toppings" value="basil">Basil</label>
-          </div>
-          <br>
-</div>
           <button type="submit" name="button" class="btn btn-success" id="getPrice">Show Price</button>
-        </form>
+       </form>
 
+        <div class="result">
+          <h3>Your Price: <span id="showPrice"> </span></h3>
+        </div>
 
-<div class="result">
-  <h3>Your Price: <span id="showPrice"> </span></h3>
-</div>
-  </div>
+    </div>
   </body>
 </html>
