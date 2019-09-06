@@ -13,10 +13,8 @@ Pizza.prototype.calcTotal = function() {
     this.totalCost += 7
   } else if (this.size === "large") {
     this.totalCost += 10
-    console.log (this.totalCost);
   } else {
       this.totalCost += 13
-      console.log(this.totalCost);
     }
     var toppingsPrice = 0;
     this.toppings.forEach(function(toppings){
@@ -25,6 +23,7 @@ Pizza.prototype.calcTotal = function() {
     this.totalCost += toppingsPrice
     return this.totalCost
   };
+
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
