@@ -14,14 +14,18 @@ Pricing for base pizza is as follows:
 * _Large - $13.00_
 * _X-Large - $15.00_
 
-Each additional topping will add $0.50 to total price. Sample inputs:
+Each additional topping will add $0.50 to total price.
 
+Customer can select 0 extra toppings, but will still have to specify a size to display a price.
+
+Sample inputs:
 
 | Size      | Number of toppings| Price |
 | ------------- |:-------------:| -----:|
 | Small         | 3             | $8.50  |
 | Medium        | 6             | $13.00 |
-| Extra Large   | 0             | $13.00 |
+| Large         | 0             | $13.00 |
+| Extra Large   | 5             | $17.50 |
 
 
 Once the user submits their preferred size and toppings, their total price will be displayed.
